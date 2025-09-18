@@ -214,7 +214,7 @@ class MergedSenateScraper:
 
         return True
 
-    def save_results(self, filename="toate_proiectele_2025_merged.json"):
+    def save_results(self, filename="proiecte_senat.json"):
         try:
             with open(filename, "w", encoding="utf-8") as f:
                 json.dump(self.proiecte, f, ensure_ascii=False, indent=2)

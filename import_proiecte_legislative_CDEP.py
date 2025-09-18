@@ -195,7 +195,7 @@ def get_proiecte_camera_deputatilor():
         print(f"[{idproiect}] {titlu[:60]}...")
 
     # Salvăm în fișier JSON
-    with open(f"proiecte_{an_curent}.json", "w", encoding="utf-8") as f:
+    with open(f"proiecte_CDEP_{an_curent}.json", "w", encoding="utf-8") as f:
         json.dump(proiecte, f, ensure_ascii=False, indent=2)
 
     print(f"\n✅ {len(proiecte)} proiecte din {an_curent} au fost salvate în fișierul JSON.")
