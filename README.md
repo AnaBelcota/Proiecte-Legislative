@@ -1,4 +1,4 @@
-# Summer Internship Project / Assignment
+# Summer Internship Project
 
 ## Overview & Functionality
 
