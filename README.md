@@ -1,7 +1,17 @@
-# Task primit in cadrul practicii de vara
+# Summer Internship Project / Assignment
 
-Functionalitate:
--Acceseaza site ul CDEP/Senat
--Extrage titlul si numarul fiecarui proiect, iar apoi acceseaza fiecare proiect in parte si extrage datele necesare
--La final toate datele sunt salvate intr-un JSON (initial facusem cu salvarea lor intr-un tabel in postgreSQL, dar ni s a cerut sa modificam in JSON pentru a fi mai usor de accesat)
--Partea cu site ul Senatului este facuta cu selenium, caci altfel nu am reusit sa accesam fiecare proiect, pe cand la CDEP am reusit cu BeautifulSoup.
+## Overview & Functionality
+
+This project automates data scraping from the official portals of the Romanian Parliament: **Chamber of Deputies (CDEP)** and the **Senate (Senat)**.
+
+- **Data Extraction Flow:**
+  - Navigates through the target platforms (CDEP / Senat).
+  - Collects the registration number and title for each legislative proposal.
+  - Opens each individual project page to extract detailed metadata.
+- **Data Storage:**
+  - Saves the final structured output into a **JSON** format (migrated from an initial PostgreSQL schema for improved portability and easier downstream access).
+
+## Technical Implementation
+
+- **Senat:** Built using **Selenium** to handle dynamic client-side rendering and navigation that prevented direct static scraping.
+- **CDEP:** Implemented using **BeautifulSoup** (alongside `requests`) for efficient static HTML parsing.
