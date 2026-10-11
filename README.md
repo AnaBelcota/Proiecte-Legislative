@@ -9,7 +9,7 @@ This project automates data scraping from the official portals of the Romanian P
   - Collects the registration number and title for each legislative proposal.
   - Opens each individual project page to extract detailed metadata.
 - **Data Storage:**
-  - Saves the final structured output into a **JSON** format (migrated from an initial PostgreSQL schema for improved portability and easier downstream access).
+   - Saves the final structured output into a **JSON** format (migrated from an initial PostgreSQL schema for improved portability and easier downstream access).
 
 ## Technical Implementation
 
